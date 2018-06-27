@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import Feature from '../components/Feature'
+import Form from '../components/Form'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -26,6 +27,7 @@ const Layout = ({ children, data }) => (
 		}}>
 			{children()}
 		</div>
+		<Form />
 	</div>
 )
 
