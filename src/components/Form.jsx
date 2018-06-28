@@ -1,5 +1,9 @@
 import React from 'react'
 
+// const actions = () => ({
+// 	onSubmit
+// })
+
 const Form = () => (
 	<form name="contact" method="POST" data-netlify="true">
 		<p>
