@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
 const Feature = ({ title, quote }) => (
 	<div>{title} - {quote}</div>

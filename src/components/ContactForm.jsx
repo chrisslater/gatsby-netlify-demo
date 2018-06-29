@@ -1,10 +1,6 @@
 import React from 'react'
 
-// const actions = () => ({
-// 	onSubmit
-// })
-
-const Form = () => (
+const ContactForm = () => (
 	<form name="contact" method="POST" data-netlify="true">
 		<p>
 			<label>Your Name: <input type="text" name="name" /></label>
@@ -28,4 +24,4 @@ const Form = () => (
 )
 
 
-export default Form
+export default ContactForm

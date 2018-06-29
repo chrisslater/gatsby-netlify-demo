@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../header'
-import Feature from '../Feature'
-import Form from '../Form'
+import ContactForm from '../ContactForm'
+
 import './index.css'
 
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from 'gatsby'
 
 const Layout = ({ children }) => (
 	<StaticQuery
@@ -37,9 +37,6 @@ const Layout = ({ children }) => (
 					]}
 				/>
 				<Header siteTitle={data.site.siteMetadata.title} />
-				{data.allContentfulFeature.edges.map(({ node }) => (
-					<Feature {...node} />
-				))}
 				<div style={{
 					margin: '0 auto',
 					maxWidth: 960,
@@ -48,7 +45,7 @@ const Layout = ({ children }) => (
 				}}>
 					{children}
 				</div>
-				<Form />
+				<ContactForm />
 			</div>
 		)
 		}
@@ -56,7 +53,7 @@ const Layout = ({ children }) => (
 )
 
 Layout.propTypes = {
-	children: PropTypes.func,
+	children: PropTypes.node,
 }
 
 export default Layout
